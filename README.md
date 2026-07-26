@@ -19,11 +19,28 @@
 ## 一、Edge 插件版（推荐）
 
 ### 安装
-1. 下载本仓库（Code → Download ZIP），解压
-2. 打开 Edge，地址栏输入 `edge://extensions`
-3. 打开左下角**「开发人员模式」**
-4. 点**「加载解压缩的扩展」**，选择 `edge-extension` 文件夹
-5. 点右上角拼图图标 🧩，把插件固定到工具栏
+
+**第 1 步：下载**
+
+点这里下载 👉 **[edge-extension-v1.0.zip](https://github.com/liutianyi746-lab/qq-forum-monitor/releases/latest/download/edge-extension-v1.0.zip)**
+
+**第 2 步：解压**
+
+右键下载好的 zip → **「全部解压缩」/「解压到当前文件夹」**，会得到一个文件夹。
+记住这个文件夹的位置（里面应该能看到 `manifest.json` 这个文件）。
+
+**第 3 步：装进 Edge**
+
+1. 打开 Edge 浏览器
+2. 在地址栏输入 `edge://extensions` 然后按回车
+3. 找到页面**左下角的「开发人员模式」开关，把它打开**
+4. 页面上方会出现按钮，点**「加载解压缩的扩展」**
+5. 在弹出的窗口里，选中**第 2 步解压出来的那个文件夹**，点「选择文件夹」
+
+**第 4 步：把插件固定出来（方便点）**
+
+点 Edge 右上角的**拼图图标 🧩** → 找到「QQ频道帖子关键字提醒」→ 点它右边的**图钉图标**。
+这样插件图标就常驻在地址栏旁边了。
 
 ### 使用
 1. 先在 Edge 里登录一次 QQ 频道网页版（访问 `https://pd.qq.com/g/你的频道`）
@@ -43,8 +60,15 @@
 
 ## 二、Python 脚本版
 
+点这里下载 👉 **[python-version-v1.0.zip](https://github.com/liutianyi746-lab/qq-forum-monitor/releases/latest/download/python-version-v1.0.zip)**，解压后使用。
+
+> **Windows 用户最简单的用法**：解压后按顺序双击这三个文件即可，全程不用碰命令行 ——
+> `第1步_安装依赖.bat` → `第2步_扫码登录.bat` → `第3步_开始监控.bat`
+>（开始前记得先把 `config.yaml.example` 改名为 `config.yaml`，并填入关键字和 PushPlus token）
+
+以下是手动命令行方式：
+
 ```bash
-cd python-version
 python -m pip install -r requirements.txt
 python -m playwright install chromium
 ```
@@ -61,8 +85,6 @@ python monitor.py --setup
 ```bash
 python monitor.py
 ```
-
-Windows 用户也可以直接双击 `python-version` 里的 `第1步_安装依赖.bat` → `第2步_扫码登录.bat` → `第3步_开始监控.bat`。
 
 其它命令：`--test-push` 测试推送、`--once` 只查一次。
 

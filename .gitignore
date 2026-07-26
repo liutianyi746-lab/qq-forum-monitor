@@ -1,0 +1,19 @@
+# ===== 绝对不要提交的敏感文件 =====
+# 含 QQ 登录 Cookie
+request_template.json
+# 含真实帖子内容与他人昵称
+sample_response.json
+# 含你填写的 PushPlus token
+config.yaml
+# 浏览器登录资料
+browser_data/
+# 已提醒记录
+seen.json
+
+# ===== 常规 =====
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+Thumbs.db

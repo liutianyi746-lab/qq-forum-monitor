@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "QQ频道帖子关键字提醒",
   "version": "1.0",
-  "description": "监控 QQ 频道帖子，命中关键字时在电脑右下角弹窗提醒。使用你浏览器里已登录的 QQ 频道身份，无需扫码、无需额外账号。",
+  "description": "监控 QQ 频道帖子，命中关键字时在电脑右下角弹窗提醒。使用你浏览器里已登录的 QQ 频道身份，无需额外登录、无需额外账号。",
   "permissions": ["storage", "alarms", "notifications", "cookies"],
   "host_permissions": ["https://pd.qq.com/*", "https://www.pushplus.plus/*"],
   "background": { "service_worker": "background.js" },

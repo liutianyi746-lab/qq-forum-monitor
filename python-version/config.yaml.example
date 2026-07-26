@@ -8,10 +8,7 @@ channel_url: "https://pd.qq.com/g/iloveswufe?subc=hot"
 # 关键字列表：帖子标题或正文里出现其中任意一个，就推送给你（不区分大小写）
 # 在下面按需增删，每行一个，前面加 "- "
 keywords:
-  - 保研
-  - 调剂
-  - 实习
-  - 内推
+  - 换成你要监控的词
 
 # 每隔多少分钟查一次（太快可能触发风控，建议 3 分钟以上）
 interval_minutes: 3

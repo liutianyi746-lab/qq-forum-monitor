@@ -4,7 +4,7 @@ const CHANNEL_URL_BASE = "https://pd.qq.com/g/";
 
 const DEFAULTS = {
   guildNumber: "iloveswufe",     // 频道链接 pd.qq.com/g/后面那段
-  keywords: ["保研", "调剂", "实习", "内推"],
+  keywords: [],                  // 由用户在插件窗口里自行填写
   intervalSeconds: 60,           // 检查间隔（秒）。浏览器最快约 30 秒
   sortOption: 1,                 // 1=热门；改成“最新”排序的值需实测确认
   enabled: true,

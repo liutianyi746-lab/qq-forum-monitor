@@ -1,6 +1,6 @@
 const DEFAULTS = {
   guildNumber: "iloveswufe",
-  keywords: ["保研", "调剂", "实习", "内推"],
+  keywords: [],
   intervalSeconds: 60,
   enabled: true,
   pushToken: ""
